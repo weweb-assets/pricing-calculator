@@ -61,10 +61,12 @@
                     >
                         {{ content.devise }}{{ userCount * plan.prices[radio] }}
                     </div>
-                    <wwLayout
-                        :path="`plans[${index}].planPricingObjects`"
-                        class="layout pricing-section__plans-plan-pricing-layout -layout"
-                    ></wwLayout>
+                    <div
+                        class="layout pricing-section__plans-plan-pricing-duration"
+                        :style="{ color: plan.priceStyle.color }"
+                    >
+                        /{{ durationTexts[radio] }}
+                    </div>
                 </div>
                 <wwLayout
                     :path="`plans[${index}].planMainObjects`"
@@ -137,6 +139,7 @@ export default {
         return {
             radio: 0,
             userCount: 1,
+            durationTexts: ['Month', 'Year'],
         };
     },
     computed: {
@@ -325,15 +328,17 @@ export default {
                 width: 100%;
                 display: flex;
                 align-items: center;
-                font-size: 30px;
-                font-weight: bold;
 
                 &-price {
                     margin-left: 30px;
                     flex-shrink: 1;
+                    font-size: 30px;
+                    font-weight: bold;
                 }
-                &-layout {
-                    flex-grow: 1;
+                &-duration {
+                    font-size: 18px;
+                    font-weight: lighter;
+                    padding-left: 15px;
                 }
             }
             &-main {
