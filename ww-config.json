@@ -1,0 +1,125 @@
+{
+    "componentPath": "./src/wwSection.vue",
+    "editor": {
+        "settingsOptions": {
+            "mainColor": {
+                "label": { "en": "Main Color", "fr": "Couleur" },
+                "type": "Color"
+            },
+            "scrollBarText": {
+                "label": { "en": "ScrollBar Text", "fr": "Texte sur Barre" },
+                "type": "Text",
+                "options": {
+                    "placeholder": "User"
+                }
+            },
+            "devise": {
+                "label": { "en": "Devise", "fr": "Devise" },
+                "type": "Text",
+                "options": {
+                    "placeholder": "$"
+                }
+            },
+            "plan1PriceMonth": {
+                "label": { "en": "Plan 1 /month", "fr": "Plan 1 /mois" },
+                "type": "Number",
+                "path": "plans[0].prices[0]"
+            },
+            "plan1PriceYear": {
+                "label": { "en": "Plan 1 /year", "fr": "Plan 1 /an" },
+                "type": "Number",
+                "path": "plans[0].prices[1]"
+            },
+            "plan1PriceFont": {
+                "label": { "en": "Plan 1 font size", "fr": "Plan 1 taille" },
+                "type": "Number",
+                "path": "plans[0].priceStyle.fontSize"
+            },
+            "plan1Color": {
+                "label": { "en": "Plan 1 color", "fr": "Plan 1 couleur" },
+                "type": "Color",
+                "path": "plans[0].color"
+            },
+            "plan1PriceColor": {
+                "label": { "en": "Plan 1 price color", "fr": "Plan 1 couleur prix" },
+                "type": "Color",
+                "path": "plans[0].priceStyle.color"
+            },
+            "plan2PriceMonth": {
+                "label": { "en": "Plan 2 /month", "fr": "Plan 2 /mois" },
+                "type": "Number",
+                "path": "plans[1].prices[0]"
+            },
+            "plan2PriceYear": {
+                "label": { "en": "Plan 2 /year", "fr": "Plan 2 /an" },
+                "type": "Number",
+                "path": "plans[1].prices[1]"
+            },
+            "plan2PriceFont": {
+                "label": { "en": "Plan 2 font size", "fr": "Plan 2 taille" },
+                "type": "Number",
+                "path": "plans[1].priceStyle.fontSize"
+            },
+            "plan2Color": {
+                "label": { "en": "Plan 2 color", "fr": "Plan 2 couleur" },
+                "type": "Color",
+                "path": "plans[1].color"
+            },
+            "plan2PriceColor": {
+                "label": { "en": "Plan 2 price color", "fr": "Plan 2 couleur prix" },
+                "type": "Color",
+                "path": "plans[1].priceStyle.color"
+            },
+            "plan3PriceMonth": {
+                "label": { "en": "Plan 3 /month", "fr": "Plan 3 /mois" },
+                "type": "Number",
+                "path": "plans[2].prices[0]"
+            },
+            "plan3PriceYear": {
+                "label": { "en": "Plan 3 /year", "fr": "Plan 3 /an" },
+                "type": "Number",
+                "path": "plans[2].prices[1]"
+            },
+            "plan3PriceFont": {
+                "label": { "en": "Plan 3 font size", "fr": "Plan 3 taille" },
+                "type": "Number",
+                "path": "plans[2].priceStyle.fontSize"
+            },
+            "plan3Color": {
+                "label": { "en": "Plan 3 color", "fr": "Plan 3 couleur" },
+                "type": "Color",
+                "path": "plans[2].color"
+            },
+            "plan3PriceColor": {
+                "label": { "en": "Plan 3 price color", "fr": "Plan 3 couleur prix" },
+                "type": "Color",
+                "path": "plans[2].priceStyle.color"
+            },
+            "plan4PriceMonth": {
+                "label": { "en": "Plan 4 /month", "fr": "Plan 4 /mois" },
+                "type": "Number",
+                "path": "plans[3].prices[0]"
+            },
+            "plan4PriceYear": {
+                "label": { "en": "Plan 4 /year", "fr": "Plan 4 /an" },
+                "type": "Number",
+                "path": "plans[3].prices[1]"
+            },
+            "plan4PriceFont": {
+                "label": { "en": "Plan 4 font size", "fr": "Plan 4 taille" },
+                "type": "Number",
+                "path": "plans[3].priceStyle.fontSize"
+            },
+            "plan4Color": {
+                "label": { "en": "Plan 4 color", "fr": "Plan 4 couleur" },
+                "type": "Color",
+                "path": "plans[3].color"
+            },
+            "plan4PriceColor": {
+                "label": { "en": "Plan 4 price color", "fr": "Plan 4 couleur prix" },
+                "type": "Color",
+                "path": "plans[3].priceStyle.color"
+            }
+        }
+    }
+}
