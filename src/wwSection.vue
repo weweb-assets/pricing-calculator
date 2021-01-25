@@ -48,7 +48,7 @@
                 class="pricing-section__plans-plan"
                 v-for="(plan, index) in content.plans"
                 :key="index"
-                :style="{ width: `calc(100% / ${content.plans.length})`, 'background-color': plan.color }"
+                :style="{ 'background-color': plan.color }"
             >
                 <wwLayout
                     :path="`plans[${index}].planHeaderObjects`"
@@ -314,7 +314,6 @@ export default {
             width: 25%;
             border-radius: 20px;
             transition: all 0.3s ease;
-            // border: 2px solid transparent;
 
             &:hover {
                 // border: 2px solid #ececf1;
@@ -343,6 +342,22 @@ export default {
             }
             &-main {
                 width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .pricing-section__header {
+            flex-direction: column;
+        }
+
+        .pricing-section__plans {
+            flex-direction: column;
+            row-gap: 30px;
+
+            &-plan {
+                width: calc(100% - 20px);
+                margin: auto;
             }
         }
     }
