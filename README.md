@@ -1,6 +1,6 @@
-# WW-BASE
+# Pricing Calculator Example
 
-This is a section for Weweb. It's a very basic one with a background and a container
+It's a Vue.js component. Its props are exposed to weweb through `ww-config.json` file.
 
 ## Installation
 
