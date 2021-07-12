@@ -35,8 +35,8 @@
                 </div>
             </div>
             <input
-                class="pricing-section__range-input"
                 v-model="userCount"
+                class="pricing-section__range-input"
                 type="range"
                 min="1"
                 :max="content.maxUserCount"
@@ -45,9 +45,9 @@
         </div>
         <div class="pricing-section__plans">
             <div
-                class="pricing-section__plans-plan"
                 v-for="(plan, index) in content.plans"
                 :key="index"
+                class="pricing-section__plans-plan"
                 :style="{ 'background-color': plan.color }"
             >
                 <wwLayout
@@ -80,7 +80,7 @@
 <script>
 export default {
     props: {
-        content: Object,
+        content: { type: Object, required: true },
     },
     wwDefaultContent: {
         headerObjects: [],
@@ -147,7 +147,6 @@ export default {
             return `${this.content.scrollBarText}${this.userCount > 1 ? 's' : ''}`;
         },
     },
-    mounted() {},
 };
 </script>
 

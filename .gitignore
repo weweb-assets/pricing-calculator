@@ -43,5 +43,3 @@ typings/
 .next
 # Mac files
 .DS_STORE
-# we only use yarn lock
-package-lock.json

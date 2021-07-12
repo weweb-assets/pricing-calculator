@@ -1,15 +1,15 @@
-# Pricing Calculator Example
+# PRICING-CALCULATOR
 
-It's a Vue.js component. Its props are exposed to weweb through `ww-config.json` file.
+This is an section for [weweb.io](https://www.weweb.io/).
 
 ## Installation
 
-To run locally, first install all dependencies with `yarn`
+To run locally, first install all dependencies with `npm install`.
 
 ## Start
 
-To serve locally, run `yarn serve --port=[PORT]`, and then go to Weweb editor, open developper popup and add localhost:[PORT] as custom wwObject.
+To serve locally, run `npm run serve --port=[PORT]`, and then go to Weweb editor, open developper popup and add localhost:[PORT] as custom section.
 
 ## Build
 
-Before release, you can check build error by running `yarn build`
+Before release, you can check build error by running `npm run build --name="pricing-calculator" --type="section"`
