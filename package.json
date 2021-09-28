@@ -4,7 +4,7 @@
         "type": "git",
         "url": "https://github.com/weweb-assets/pricing-calculator"
     },
-    "version": "3.0.0",
+    "version": "3.1.0",
     "license": "MIT",
     "scripts": {
         "build": "weweb build",
@@ -13,7 +13,7 @@
     "dependencies": {},
     "devDependencies": {
         "@vue/eslint-config-prettier": "^6.0.0",
-        "@weweb/cli": "latest",
+        "@weweb/cli": "github:weweb-team/weweb-cli#webapp",
         "babel-eslint": "^10.1.0",
         "eslint": "^7.7.0",
         "eslint-plugin-prettier": "^3.1.4",

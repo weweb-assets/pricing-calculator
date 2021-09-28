@@ -45,13 +45,13 @@
         </div>
         <div class="pricing-section__plans">
             <div
-                v-for="(plan, index) in content.plans"
+                v-for="(plan, index) in plans"
                 :key="index"
                 class="pricing-section__plans-plan"
                 :style="{ 'background-color': plan.color }"
             >
                 <wwLayout
-                    :path="`plans[${index}].planHeaderObjects`"
+                    :path="`plan${index}HeaderObjects`"
                     class="layout pricing-section__plans-plan-header -layout"
                 ></wwLayout>
                 <div class="pricing-section__plans-plan-pricing">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <wwLayout
-                    :path="`plans[${index}].planMainObjects`"
+                    :path="`plan${index}MainObjects`"
                     class="layout pricing-section__plans-plan-main -layout"
                 ></wwLayout>
             </div>
@@ -82,59 +82,6 @@ export default {
     props: {
         content: { type: Object, required: true },
     },
-    wwDefaultContent: {
-        headerObjects: [],
-        plans: [
-            {
-                planHeaderObjects: [],
-                planPricingObjects: [],
-                planMainObjects: [],
-                prices: [19, 199],
-                color: '#FFFFFF',
-                priceStyle: {
-                    color: '#000000',
-                    fontSize: 30,
-                },
-            },
-            {
-                planHeaderObjects: [],
-                planPricingObjects: [],
-                planMainObjects: [],
-                prices: [39, 399],
-                color: '#FFFFFF',
-                priceStyle: {
-                    color: '#000000',
-                    fontSize: 30,
-                },
-            },
-            {
-                planHeaderObjects: [],
-                planPricingObjects: [],
-                planMainObjects: [],
-                prices: [99, 999],
-                color: '#5F30E2',
-                priceStyle: {
-                    color: '#000000',
-                    fontSize: 30,
-                },
-            },
-            {
-                planHeaderObjects: [],
-                planPricingObjects: [],
-                planMainObjects: [],
-                prices: [199, 1999],
-                color: '#FFFFFF',
-                priceStyle: {
-                    color: '#000000',
-                    fontSize: 30,
-                },
-            },
-        ],
-        mainColor: '#5F30E2',
-        scrollBarText: 'User',
-        devise: '$',
-        maxUserCount: 100,
-    },
     data() {
         return {
             radio: 0,
@@ -146,6 +93,27 @@ export default {
         usersLabel() {
             return `${this.content.scrollBarText}${this.userCount > 1 ? 's' : ''}`;
         },
+         plans(){
+            const plans = [];
+
+            for(let i = 0 ; i < 4 ; i++){
+                plans.push({
+                    planHeaderObjects: this.content[`plan${i}HeaderObjects`],
+                    planMainObjects: this.content[`plan${i}MainObjects`],
+                    prices: [
+                        this.content[`plan${i}PriceMonth`],
+                        this.content[`plan${i}PriceYear`],
+                    ],
+                    priceStyle: {
+                        fontSize: this.content[`plan${i}FontSize`],
+                        color: this.content[`plan${i}Color`],
+                    },
+                    color:this.content[`plan${i}BackgroundColor`],
+                })
+            }
+
+            return plans;
+        }
     },
 };
 </script>
