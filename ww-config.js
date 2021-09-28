@@ -66,6 +66,11 @@ export default {
             },
             defaultValue: "User"
         },
+        maxUserCount: {
+            "label": { "en": "Max items count", "fr": "Nb d'elements max" },
+            "type": "Number",
+            defaultValue: 100
+        },
         devise: {
             section: 'settings',
             "label": { "en": "Devise", "fr": "Devise" },
